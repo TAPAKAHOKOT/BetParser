@@ -6,12 +6,20 @@ dependencies = [
     "fastapi>=0.115.12",
     "loguru>=0.7.3",
     "playwright>=1.51.0",
+    "playwright-stealth>=1.0.6",
     "pre-commit>=4.2.0",
+    "ruff>=0.11.2",
+    "selenium>=4.30.0",
+    "setuptools>=78.0.2",
+    "undetected-chromedriver>=3.5.5",
     "uvicorn>=0.34.0",
 ]
 
 [tool.ruff]
 line-length = 120
+target-version = "py311"
+exclude = ["test_code"]
+
+[tool.ruff.lint]
 select = ["E", "F", "W"]
 ignore = ["E501"]
-target-version = "py311"

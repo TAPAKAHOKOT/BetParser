@@ -1,5 +1,14 @@
 {
-    "url": "https://bet365.ca",
-    "headless": true
+    "url": "https://www.on.bet365.ca/#/IP",
+    "headless": false,
+
+    "selectors": {
+        "loader": ".bl-Preloader_SpinnerContainer",
+        "live_btn": ".hm-MainHeaderTabRow_InPlayLabel",
+        "sport_text": ".ovm-ClassificationBarButton_Text",
+        "required_sports": {
+            ".ovm-ClassificationBarButton-1": ".ovm-FixtureDetailsTwoWay_TeamsAndInfoWrapper",
+            ".ovm-ClassificationBarButton-13": ".ovm-FixtureDetailsWithIndicators_TeamsAndInfoWrapper"
+        }
+    }
 }
-  

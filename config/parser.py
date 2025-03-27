@@ -29,6 +29,9 @@ class ParserConfig:
         self.url = self._data.get("url", None)
         self.headless = self._data.get("headless", True)
 
+        # SELECTORS
+        self.selectors = self._data.get("selectors", {})
+
     def get(self, key, default=None):
         """
         Универсальный метод для получения произвольных полей из конфигурации.
